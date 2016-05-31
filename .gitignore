@@ -1,12 +1,23 @@
-*.class
+package br.com.wincomp.aula1;
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+public class Incrementos {
 
-# Package Files #
-*.jar
-*.war
-*.ear
+	public static void main(String[] args) {
+		
+		int a = 10;
+		int b = 20;
+		int r = 0;
+		
+		r = (a++ + ++b); // r = 31
+		System.out.println(r);
+		
+		r = (a + b); // r = 32
+		System.out.println(r);
+		
+		r = (++a + --b); // r = 32
+		System.out.println(r);
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+
+	}
+
+}
